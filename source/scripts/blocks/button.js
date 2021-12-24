@@ -16,7 +16,7 @@ const buttonAnimate = () => {
       this.color1 = options.color1 || '#36DFE7';
       this.color2 = options.color2 || '#8F17E1';
       this.color3 = options.color3 || '#BF09E6';
-      this.textColor = options.textColor || '#000000';
+      this.textColor = options.textColor || '#fff';
       this.text = options.text    || 'Button';
       this.svg = svg;
       this.layers = [{

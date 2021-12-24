@@ -15,7 +15,8 @@
 
   <header class="header">
     <div class="header__wrap">
-      <div class="container">
+      <div class="container container--nav">
+        <img src="./images/unicorn-logo.png" width="200px" height="90" alt="unicorn logo">
         <ul class="nav">
           <li class="nav__item">
             <a class="nav__link" href="#">Start</a>
@@ -44,19 +45,24 @@
     <section class="cover">
       <p class="cover__title">Tworzymy proste rozwiązania dla złożonych zadań i problemów</p>
       <!-- <a class="cover__link" href="#">Nasze realizacje</a> -->
-      <svg class="liquid-button"
-        data-text="Nasze realizacje"
-        data-force-factor="0.1"
-        data-layer-1-viscosity="0.5"
-        data-layer-2-viscosity="0.4"
-        data-layer-1-mouse-force="400"
-        data-layer-2-mouse-force="500"
-        data-layer-1-force-limit="1"
-        data-layer-2-force-limit="2"
-        data-color1="#FFF500"
-        data-color2="#20D8F9"
-        data-color3="#20D8F9">
-      </svg>
+      <a href="#">
+        <span class="visually-hidden">Nasze realizacje</span>
+        <svg aria-hidden="true"
+          class="liquid-button"
+          data-text="Nasze realizacje"
+          data-force-factor="0.1"
+          data-layer-1-viscosity="0.5"
+          data-layer-2-viscosity="0.4"
+          data-layer-1-mouse-force="400"
+          data-layer-2-mouse-force="500"
+          data-layer-1-force-limit="1"
+          data-layer-2-force-limit="2"
+          data-color1="#FFF500"
+          data-color2="#20D8F9"
+          data-color3="#20D8F9">
+        </svg>
+      </a>
+
     </section>
 
   </main>
