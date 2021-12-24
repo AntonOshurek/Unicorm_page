@@ -1,7 +1,7 @@
-import {saydefault} from './block-1';
+import {buttonAnimate} from './blocks/button';
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    saydefault();
+  buttonAnimate();
 });
 
