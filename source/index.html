@@ -1,15 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PL">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webpack</title>
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UNICORN</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+
 </head>
+
 <body class="body">
-    <h1>My webpack build</h1>
-    <p class="webpack-title"></p>
-    <script src="js/bundle.js"></script>
+
+  <header class="header">
+    <h1 class="visually-hidden">unicorn Poznań</h1>
+    <div class="header__wrap">
+      <div class="container container--nav">
+        <img src="./images/unicorn-logo.png" width="200px" height="90" alt="unicorn logo">
+        <ul class="nav">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Start</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--current" href="#">O nas</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Systemy</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Usługi</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Referencje</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="cover">
+      <h2 class="cover__title">Tworzymy proste rozwiązania</br> dla złożonych zadań i problemów</h2>
+      <!-- <a class="cover__link" href="#">Nasze realizacje</a> -->
+      <a href="#">
+        <span class="visually-hidden">Nasze realizacje</span>
+        <svg aria-hidden="true"
+          class="liquid-button"
+          data-text="Nasze realizacje"
+          data-force-factor="0.1"
+          data-layer-1-viscosity="0.5"
+          data-layer-2-viscosity="0.4"
+          data-layer-1-mouse-force="400"
+          data-layer-2-mouse-force="500"
+          data-layer-1-force-limit="1"
+          data-layer-2-force-limit="2"
+          data-color1="#FFF500"
+          data-color2="#20D8F9"
+          data-color3="#20D8F9">
+        </svg>
+      </a>
+    </section>
+
+    <section class="skills">
+
+      <div class="container container--skills">
+        <h2 class="skills__title">Naszą specjalnością są systemy dla środowiska IBM Notes/Domino (w tym xPages).</h2>
+        <p class="skills__subtitle">Od ponad 20 lat projektujemy, wdrażamy i serwisujemy systemy informatyczne.</p>
+
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h3 class="skills__skill">IBM Systemy</h3>
+            <p class="skills__text">Wdrażamy i integrujemy systemy z rodziny IBM Sametime i IBM Connections.</p>
+          </li>
+          <li class="skills__item">
+            <h3 class="skills__skill">IBM Software</h3>
+            <p class="skills__text">Dostarczamy licencje systemów IBM Software.</p>
+          </li>
+          <li class="skills__item">
+            <h3 class="skills__skill">Najwięksi partenry</h3>
+            <p class="skills__text">Serwisujemy systemy naszych klientów. Zaufali nam najwięksi...</p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+  <script src="js/bundle.js"></script>
 </body>
 </html>

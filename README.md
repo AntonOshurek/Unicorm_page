@@ -1,15 +1,17 @@
-# Standart WebPack Build
+# Unicorn page
 * **[gh-page](https://antonoshurek.github.io/My__Webpack--BUild/)**
 ---
 
 ## Title
-***This is my standart webpack build:).***
+***Website for Unicorn Poznań***
 `what did i use?`
-* **html5**
-* **javascript**
-* **npm**
-* **node.js**
-* **webpack**
+* **HTML5**
+* **LESS**
+* **JavaScript**
+* **NPM**
+* **Node.js**
+* **Webpack**
+* **Gulp**
 
 ---
 
@@ -17,7 +19,8 @@
 ***additional tools that were used during development***
 
 * **[WebPack](https://webpack.js.org/)**
-* **[copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin)**
+* **[Babel](https://babeljs.io/docs/en/usage)**
+* **[Core-JS](https://github.com/zloirock/core-js)**
 
 ---
 
@@ -26,6 +29,7 @@
 * **instal node.js**
 * **npm clone ~~repository name~~**
 * **npm i**
-* **npx webpack**
+* **npm run build**
+* **npm start**
 
 ---
