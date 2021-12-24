@@ -1,0 +1,27 @@
+.nav {
+  position: fixed;
+  max-width: @desctope-width;
+  width: 100%;
+  height: min-content;
+  padding: 40px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: end;
+  grid-column-gap: 20px;
+
+  background-color: transparent;
+  border-bottom: 1px solid rgba(161,161,161, 1);
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  color: @standart-white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}

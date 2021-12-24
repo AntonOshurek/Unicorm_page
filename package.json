@@ -1,7 +1,7 @@
 {
-  "name": "my__webpack--build",
+  "name": "unicorn_page",
   "version": "1.0.0",
-  "description": "",
+  "description": "Unicorn Main Page",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
@@ -9,13 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AntonOshurek/My__Webpack--BUild.git"
+    "url": "git+https://github.com/AntonOshurek/Unicorm_page.git"
   },
+  "keywords": [
+    "Unicorn"
+  ],
   "author": "Anton Oshurek",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AntonOshurek/My__Webpack--BUild/issues"
-  },
   "browserslist": [
     "last 2 versions",
     "not dead",
@@ -24,7 +23,11 @@
   "engines": {
     "node": "^12 || ^14"
   },
-  "homepage": "https://github.com/AntonOshurek/My__Webpack--BUild#readme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonOshurek/Unicorm_page/issues"
+  },
+  "homepage": "https://github.com/AntonOshurek/Unicorm_page#readme",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.5",

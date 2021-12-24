@@ -29,11 +29,22 @@
   clip: rect(0 0 0 0);
 }
 
+.container {
+  max-width: @desctope-width;
+  margin: 0 auto;
+}
+
 .body {
+  min-height: 100vh;
+
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
-  background-color: tomato;
+  background-color: @standart-white;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content;
 
   &--scrolloff {
     overflow: hidden;
