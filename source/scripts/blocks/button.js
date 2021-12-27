@@ -1,5 +1,6 @@
 const buttonAnimate = () => {
   const LiquidButton = class LiquidButton {
+    link = document.querySelector('.foo');
     constructor(svg) {
       const options = svg.dataset;
       this.id = this.constructor.id || (this.constructor.id = 1);
@@ -58,10 +59,10 @@ const buttonAnimate = () => {
 
       this.touches = [];
       this.noise = options.noise || 0;
-      document.body.addEventListener('touchstart', this.touchHandler);
-      document.body.addEventListener('touchmove', this.touchHandler);
-      document.body.addEventListener('touchend', this.clearHandler);
-      document.body.addEventListener('touchcancel', this.clearHandler);
+      this.link.addEventListener('touchstart', this.touchHandler);
+      this.link.addEventListener('touchmove', this.touchHandler);
+      this.link.addEventListener('touchend', this.clearHandler);
+      this.link.addEventListener('touchcancel', this.clearHandler);
       this.svg.addEventListener('mousemove', this.mouseHandler);
       this.svg.addEventListener('mouseout', this.clearHandler);
       this.initOrigins();

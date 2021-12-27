@@ -47,6 +47,18 @@
     align-content: center;
     justify-self: center;
   }
+
+  &--about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr min-content;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+      "lf lf hs"
+      "tf tf hs"
+    ;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+  }
 }
 
 .body {

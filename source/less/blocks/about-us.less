@@ -1,0 +1,77 @@
+.about-us {
+  width: 100%;
+  padding: 100px 20px;
+  background: #F6F6F8;
+}
+
+.about-us__info {
+  grid-area: lf;
+
+  height: min-content;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-row-gap: 20px;
+}
+
+.about-us__history {
+  grid-area: hs;
+
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-row-gap: 20px;
+
+  padding: 40px 20px;
+  background-color: #0068ab;
+  color: @standart-white;
+
+  box-shadow:  14px 14px 28px #929292,
+  -14px -14px 28px #f5f5f5;
+  border-radius: 30px;
+}
+
+.about-us__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  color: #323232;
+
+  &--history {
+    color: @standart-white;
+  }
+}
+
+.about-us__text {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.about-us__img {
+  width: 200px;
+  height: 200px;
+  background-color: #929292;
+}
+
+.about-us__quotes {
+  font-style: italic;
+}
+
+.about-us__quotes-autor {
+  display: block  ;
+  margin-top: 10px;
+}
+
+.about-us__mission {
+  grid-area: tf;
+}
+
+.mission-list {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  grid-row-gap: 10px;
+}
+
+.mission-list__item {
+
+}
