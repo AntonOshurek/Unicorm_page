@@ -6,9 +6,17 @@
 
 .header__wrap {
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   padding: 0 20px;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.9);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(161,161,161, 1);
+  transition: 0.5s all ease-in;
+
+  &--scroll {
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: 0.5s all ease-in;
+    color: #000;
+  }
 }
