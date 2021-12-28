@@ -4,6 +4,7 @@
 }
 
 .skills__title {
+  font-family: 'Rubik', sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 53px;
@@ -12,6 +13,7 @@
 }
 
 .skills__subtitle {
+  font-family: 'Rubik', sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
@@ -32,28 +34,30 @@
   width: 200px;
   position: relative;
   list-style: none;
-}
 
-.skills__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-110%, -50%);
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  grid-column-gap: 15px;
+  grid-row-gap: 5px;
 }
 
 .skills__skill {
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-
-  color: #000000;
+  color: @standart-black;
 }
 
 .skills__text {
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
   color: #999999;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
