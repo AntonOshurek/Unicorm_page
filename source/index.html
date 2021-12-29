@@ -36,16 +36,16 @@
         <img src="./images/unicorn-logo.png" width="200px" height="90" alt="unicorn logo">
         <ul class="nav">
           <li class="nav__item">
-            <a class="nav__link" href="#">Start</a>
+            <a class="nav__link nav__link--start nav__link--current" href="#start">Start</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--current" href="#">O nas</a>
+            <a class="nav__link nav__link--skills" href="#skills">specjalność</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--aboutUs" href="#aboutUs">O nas</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Systemy</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Usługi</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Referencje</a>
@@ -59,7 +59,7 @@
   </header>
 
   <main class="main">
-    <section class="cover">
+    <section class="cover" id="start">
       <h2 class="cover__title">Tworzymy proste rozwiązania</br> dla złożonych zadań i problemów</h2>
       <!-- <a class="cover__link" href="#">Nasze realizacje</a> -->
       <a class="foo" href="#">
@@ -81,7 +81,7 @@
       </a>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
 
       <div class="container container--skills">
         <h2 class="skills__title">Naszą specjalnością są systemy dla środowiska IBM Notes/Domino (w tym xPages).</h2>
@@ -114,7 +114,7 @@
 
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="aboutUs">
       <h2 class="visually-hidden">O nas</h2>
       <div class="container container--about-us">
         <article class="about-us__info">
