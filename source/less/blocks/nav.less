@@ -31,9 +31,15 @@
   line-height: 20px;
   text-decoration: none;
 
+  &--current {
+    pointer-events: none;
+  }
+
   &:hover,
   &:focus,
   &--current {
+
+    // pointer-events: none;
 
     &::after {
       content: '';
