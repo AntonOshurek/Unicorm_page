@@ -37,6 +37,15 @@
     grid-row-gap: 10px;
     grid-column-gap: 10px;
   }
+
+  @media (max-width: @tablet-width) {
+    // grid-template-areas:
+    // "tl tl tl"
+    // "im im im"
+    // "tx tx tx"
+    // ;
+    display: block;
+  }
 }
 
 .about-us__mission {
@@ -76,6 +85,11 @@
 
   @media (max-width: @tablet-width) {
     grid-area: im;
+  }
+
+  @media (max-width: @tablet-width) {
+    float: left;
+    margin: 0 8px 0 0;
   }
 }
 
