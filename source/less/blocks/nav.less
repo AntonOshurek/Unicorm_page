@@ -114,10 +114,6 @@
   &--black > .line {
     stroke: #000;
   }
-
-  &--menu-open > .line{
-    stroke: #000;
-  }
 }
 .line {
   fill:none;
@@ -128,9 +124,10 @@
 }
 .hamRotate.active {
   transform: rotate(45deg);
-}
-.hamRotate180.active {
-  transform: rotate(180deg);
+
+  & > .line {
+    stroke: #000;
+  }
 }
 
 .ham8 .top {
