@@ -487,6 +487,30 @@ const setCurrentMenuItem = () => {
 
 
 
+/***/ }),
+
+/***/ "./source/scripts/blocks/show-about-us-block.js":
+/*!******************************************************!*\
+  !*** ./source/scripts/blocks/show-about-us-block.js ***!
+  \******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "showAboutUsBlock": function() { return /* binding */ showAboutUsBlock; }
+/* harmony export */ });
+const showAboutUsBlock = () => {
+  const showButton = document.querySelector('.about-us__show-more-btn');
+  const article = document.querySelector('.about-us__info');
+  const buttonIcon = document.querySelector('.about-us__show-more-icon');
+  showButton.addEventListener('click', () => {
+    article.classList.toggle('about-us__info--open');
+    buttonIcon.classList.toggle('about-us__show-more-icon--close');
+  });
+};
+
+
+
 /***/ })
 
 /******/ 	});
@@ -556,6 +580,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_nav_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/nav-scroll */ "./source/scripts/blocks/nav-scroll.js");
 /* harmony import */ var _blocks_set_current_menu_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/set-current-menu-item */ "./source/scripts/blocks/set-current-menu-item.js");
 /* harmony import */ var _blocks_mobile_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/mobile-menu */ "./source/scripts/blocks/mobile-menu.js");
+/* harmony import */ var _blocks_show_about_us_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/show-about-us-block */ "./source/scripts/blocks/show-about-us-block.js");
+
 
 
 
@@ -565,6 +591,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_blocks_nav_scroll__WEBPACK_IMPORTED_MODULE_1__.navScroll)();
   (0,_blocks_set_current_menu_item__WEBPACK_IMPORTED_MODULE_2__.setCurrentMenuItem)();
   (0,_blocks_mobile_menu__WEBPACK_IMPORTED_MODULE_3__.mobileMenu)();
+  (0,_blocks_show_about_us_block__WEBPACK_IMPORTED_MODULE_4__.showAboutUsBlock)();
 });
 }();
 /******/ })()
