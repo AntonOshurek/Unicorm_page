@@ -17,6 +17,7 @@ const mobileMenu = () => {
     body.classList.remove('body--scrolloff');
 
     menuBackground.removeEventListener('click', onMenuBGCloseMenu);
+
     navItem.forEach((link) => {
       link.removeEventListener('click', closeMenu);
     })
@@ -34,6 +35,7 @@ const mobileMenu = () => {
     body.classList.add('body--scrolloff');
 
     menuBackground.addEventListener('click', onMenuBGCloseMenu);
+
     navItem.forEach((link) => {
       link.addEventListener('click', closeMenu);
     })

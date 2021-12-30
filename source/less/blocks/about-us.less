@@ -27,6 +27,16 @@
   box-shadow:  14px 14px 28px #929292,
   -14px -14px 28px #f5f5f5;
   border-radius: 30px;
+
+  @media (max-width: @tablet-width) {
+    padding: 20px;
+    grid-template-areas:
+    "tl tl tl"
+    "tx tx im"
+    ;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  }
 }
 
 .about-us__mission {
@@ -46,6 +56,10 @@
 
   &--history {
     color: @standart-white;
+
+    @media (max-width: @tablet-width) {
+      grid-area: tl;
+    }
   }
 }
 
@@ -59,12 +73,19 @@
   width: 200px;
   height: 200px;
   background-color: #929292;
+
+  @media (max-width: @tablet-width) {
+    grid-area: im;
+  }
 }
 
 .about-us__quotes {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 
+  @media (max-width: @tablet-width) {
+    grid-area: tx;
+  }
 }
 
 .about-us__quotes-autor {
