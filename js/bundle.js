@@ -321,6 +321,64 @@ const buttonAnimate = () => {
 
 /***/ }),
 
+/***/ "./source/scripts/blocks/mobile-menu.js":
+/*!**********************************************!*\
+  !*** ./source/scripts/blocks/mobile-menu.js ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "mobileMenu": function() { return /* binding */ mobileMenu; }
+/* harmony export */ });
+const mobileMenu = () => {
+  const navButton = document.querySelector('.nav-button');
+  const navBlock = document.querySelector('.nav');
+  const navButtonSvg = document.querySelector('.ham');
+  const body = document.querySelector('.body');
+  const menuBackground = document.querySelector('.header__menu-bg');
+  const navItem = document.querySelectorAll('.nav__item');
+  let menuOpen = false;
+
+  const closeMenu = () => {
+    menuOpen = false;
+    navBlock.classList.remove('nav--open');
+    navButtonSvg.classList.remove('active');
+    menuBackground.classList.remove('header__menu-bg--open');
+    body.classList.remove('body--scrolloff');
+    menuBackground.removeEventListener('click', onMenuBGCloseMenu);
+    navItem.forEach(link => {
+      link.removeEventListener('click', closeMenu);
+    });
+  };
+
+  const onMenuBGCloseMenu = () => {
+    closeMenu();
+  };
+
+  const openMenu = () => {
+    menuOpen = true;
+    navBlock.classList.add('nav--open');
+    navButtonSvg.classList.add('active');
+    menuBackground.classList.add('header__menu-bg--open');
+    body.classList.add('body--scrolloff');
+    menuBackground.addEventListener('click', onMenuBGCloseMenu);
+    navItem.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  };
+
+  const onMobileMenuToogle = evt => {
+    menuOpen ? closeMenu() : openMenu();
+  };
+
+  navButton.addEventListener('click', onMobileMenuToogle);
+};
+
+
+
+/***/ }),
+
 /***/ "./source/scripts/blocks/nav-scroll.js":
 /*!*********************************************!*\
   !*** ./source/scripts/blocks/nav-scroll.js ***!
@@ -331,19 +389,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "navScroll": function() { return /* binding */ navScroll; }
 /* harmony export */ });
+const TABLET_WIDTH = 900;
+
 const navScroll = () => {
   const header = document.querySelector('.header__wrap');
   const coverBlock = document.querySelector('.cover');
+  const navButtonSvg = document.querySelector('.ham');
   const headerHeight = window.getComputedStyle(header).height.replace(/\D+/, '');
   let coverHeight = window.getComputedStyle(coverBlock).height.replace(/\D+/, '');
+  let navButton = false;
 
   const onScrollCheck = () => {
     if (window.scrollY > coverHeight - headerHeight / 2) {
       header.classList.add('header__wrap--scroll');
+
+      if (navButton) {
+        navButtonSvg.classList.add('ham--black');
+      }
     } else {
       header.classList.remove('header__wrap--scroll');
+
+      if (navButton) {
+        navButtonSvg.classList.remove('ham--black');
+      }
     }
   };
+
+  if (window.getComputedStyle(header).width.replace(/\D+/, '') < TABLET_WIDTH) {
+    navButton = true;
+    onScrollCheck();
+  }
 
   const onHeightCheck = () => {
     coverHeight = window.getComputedStyle(coverBlock).height.replace(/\D+/, '');
@@ -480,6 +555,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blocks/button */ "./source/scripts/blocks/button.js");
 /* harmony import */ var _blocks_nav_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/nav-scroll */ "./source/scripts/blocks/nav-scroll.js");
 /* harmony import */ var _blocks_set_current_menu_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/set-current-menu-item */ "./source/scripts/blocks/set-current-menu-item.js");
+/* harmony import */ var _blocks_mobile_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/mobile-menu */ "./source/scripts/blocks/mobile-menu.js");
+
 
 
 
@@ -487,6 +564,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_blocks_button__WEBPACK_IMPORTED_MODULE_0__.buttonAnimate)();
   (0,_blocks_nav_scroll__WEBPACK_IMPORTED_MODULE_1__.navScroll)();
   (0,_blocks_set_current_menu_item__WEBPACK_IMPORTED_MODULE_2__.setCurrentMenuItem)();
+  (0,_blocks_mobile_menu__WEBPACK_IMPORTED_MODULE_3__.mobileMenu)();
 });
 }();
 /******/ })()
