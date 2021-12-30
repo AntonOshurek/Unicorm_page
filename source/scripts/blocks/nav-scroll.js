@@ -4,7 +4,7 @@ const navScroll = () => {
 
   const header = document.querySelector('.header__wrap');
   const coverBlock = document.querySelector('.cover');
-  const navButtonLine = document.querySelectorAll('.line');
+  const navButtonSvg = document.querySelector('.ham');
 
   const headerHeight = window.getComputedStyle(header).height.replace(/\D+/, '');
   let coverHeight = window.getComputedStyle(coverBlock).height.replace(/\D+/, '');
@@ -14,16 +14,12 @@ const navScroll = () => {
     if (window.scrollY > coverHeight - (headerHeight / 2)) {
       header.classList.add('header__wrap--scroll');
       if(navButton) {
-        navButtonLine.forEach((line) => {
-          line.classList.add('line--black');
-        })
+        navButtonSvg.classList.add('ham--black');
       }
     } else {
       header.classList.remove('header__wrap--scroll');
       if(navButton) {
-        navButtonLine.forEach((line) => {
-          line.classList.remove('line--black');
-        })
+        navButtonSvg.classList.remove('ham--black');
       }
     }
   };

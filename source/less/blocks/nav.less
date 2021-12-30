@@ -110,6 +110,14 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  &--black > .line {
+    stroke: #000;
+  }
+
+  &--menu-open > .line{
+    stroke: #000;
+  }
 }
 .line {
   fill:none;
@@ -117,9 +125,6 @@
   stroke:#fff;
   stroke-width:5.5;
   stroke-linecap:round;
-}
-.line--black {
-  stroke: #000;
 }
 .hamRotate.active {
   transform: rotate(45deg);
