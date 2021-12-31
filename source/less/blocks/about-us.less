@@ -2,6 +2,10 @@
   width: 100%;
   padding: 100px 20px;
   background: #F6F6F8;
+
+  @media (max-width: @tablet-width) {
+    padding: 50px 20px;
+  }
 }
 
 .about-us__info {
@@ -12,32 +16,6 @@
   display: grid;
   grid-template-rows: min-content min-content;
   grid-row-gap: 20px;
-
-  @media (max-width: @tablet-width) {
-    height: 140px;
-    overflow: hidden;
-    border-radius: 0 0 15px 15px;
-
-    &--open {
-      height: min-content;
-
-      &::after {
-        display: none;
-      }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 45px;
-      background: rgb(120,118,143);
-      background: linear-gradient(0deg, rgba(120,118,143,0.4) 0%, rgba(255,255,255,0) 100%);
-    }
-  }
 }
 
 .about-us__history {
@@ -148,30 +126,4 @@
 
 .mission-list__item {
   font-family: 'Rubik', sans-serif;
-}
-
-.about-us__show-more-btn {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: transparent;
-  border: none;
-  top: 10px;
-  right: 5px;
-  //transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.about-us__show-more-icon {
-  transform: rotate(90deg);
-  width: 100%;
-  height: 100%;
-
-  &--close {
-    transform: rotate(-90deg);
-  }
 }
