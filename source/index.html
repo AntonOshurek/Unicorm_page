@@ -34,7 +34,9 @@
     <span class="header__menu-bg"></span> <!--background for open mobile nav-->
     <div class="header__wrap">
       <div class="container container--nav">
-        <img class="header__logo" src="./images/unicorn-logo.png" width="200px" height="90" alt="unicorn logo">
+        <img class="header__logo" src="./images/unicorn-logo.png"
+          srcset="./images/unicorn-logo.webp"
+          width="200px" height="90" alt="unicorn logo">
 
         <button class="nav-button" type="button">
           <span class="visually-hidden">Menu</span>
@@ -65,7 +67,7 @@
             <a class="nav__link nav__link--systems" href="#systems">Systemy</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Referencje</a>
+            <a class="nav__link nav__link--reference" href="#reference">Referencje</a>
           </li>
           <li class="nav__item">
             <a class="nav__link nav__link--footer" href="#footer">Kontakt</a>
@@ -78,8 +80,8 @@
   <main class="main">
     <section class="cover" id="start">
       <h2 class="cover__title">Tworzymy proste rozwiązania</br> dla złożonych zadań i problemów</h2>
-      <!-- <a class="cover__link" href="#">Nasze realizacje</a> -->
-      <a class="foo" href="#">
+      <a class="cover__link" href="#systems ">Nasze realizacje</a>
+      <!-- <a class="foo" href="#systems">
         <span class="visually-hidden">Nasze realizacje</span>
         <svg aria-hidden="true"
           class="liquid-button"
@@ -95,11 +97,10 @@
           data-color2="#20D8F9"
           data-color3="#20D8F9">
         </svg>
-      </a>
+      </a> -->
     </section>
 
     <section class="skills" id="skills">
-
       <div class="container container--skills">
         <h2 class="skills__title">Naszą specjalnością są systemy dla środowiska IBM Notes/Domino (w tym xPages).</h2>
         <p class="skills__subtitle">Od ponad 20 lat projektujemy, wdrażamy i serwisujemy systemy informatyczne.</p>
@@ -128,7 +129,6 @@
           </li>
         </ul>
       </div>
-
     </section>
 
     <section class="about-us" id="aboutUs">
@@ -148,7 +148,10 @@
         </article>
         <article class="about-us__history">
           <h3 class="about-us__title about-us__title--history">Historia</h3>
-          <img class="about-us__img" width="200" height="200" src="./images/about-us__history--img.jpg" alt="Grzegorz Pawlak (Lotus CLP) Prezes Zarządu (CEO)">
+          <img class="about-us__img" width="200" height="200"
+            src="./images/about-us__history--img.jpg"
+            srcset="./images/about-us__history--img.webp"
+            alt="Grzegorz Pawlak (Lotus CLP) Prezes Zarządu (CEO)">
           <blockquote class="about-us__quotes">
             Z wielką satysfakcją uczestniczymy w rozwoju naszych Klientów.
             Wdrażając autorskie rozwiązania, staramy się dostarczać firmom jak
@@ -200,7 +203,9 @@
         <ul class="sys-list">
           <li class="sys-list__item">
             <a class="sys-list__image-link" href="#">
-              <img class="sys-list__img" src="./images/systems/systems__img--fenix.jpg" width="250px" height="180px" alt="fenix">
+              <img class="sys-list__img" src="./images/systems/systems__img--fenix.jpg"
+                srcset="./images/systems/systems__img--fenix.webp"
+                width="250px" height="180px" alt="fenix">
             </a>
             <h3 class="sys-list__title">Systemy Unicorn</h3>
             <p class="sys-list__text">Specjalizujemy się w projektowaniu, wdrażaniu i serwisowaniu systemów dla Lotus Notes/Domino.
@@ -210,7 +215,9 @@
           </li>
           <li class="sys-list__item">
             <a class="sys-list__image-link" href="#">
-              <img class="sys-list__img" src="./images/systems/systems__img--ibm.jpg" width="250px" height="180px" alt="fenix">
+              <img class="sys-list__img" src="./images/systems/systems__img--ibm.jpg"
+                srcset="./images/systems/systems__img--ibm.webp"
+                width="250px" height="180px" alt="fenix">
             </a>
             <h3 class="sys-list__title">Systemy IBM</h3>
             <p class="sys-list__text">Od wielu lat specjalizujemy się we wdrażaniu systemów IBM (dawniej Lotus).
@@ -221,11 +228,62 @@
           </li>
           <li class="sys-list__item">
             <a class="sys-list__image-link" href="#">
-              <img class="sys-list__img" src="./images/systems/systems__img--Coastal.jpg" width="250px" height="180px" alt="fenix">
+              <img class="sys-list__img" src="./images/systems/systems__img--Coastal.jpg"
+                srcset="./images/systems/systems__img--Coastal.webp"
+                width="250px" height="180px" alt="fenix">
             </a>
             <h3 class="sys-list__title">Systemy nawigacyjne MaxSea</h3>
             <p class="sys-list__text">Od wielu lat działamy na rynku nawigacji morskiej</p>
             <a class="sys-list__link" href="#">Więcej...</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reference" id="reference">
+      <div class="section reference--wrap">
+        <h2 class="reference__title">Referencje</h2>
+        <ul class="reference__list">
+          <li class="reference__item">
+            <h3 class="reference__firm">Wavin Metalplast Buk</h3>
+            <p class="reference__text">Bezkonkurencyjny europejski dostawca systemów instalacyjnych z tworzyw
+              sztucznych współpracuje z naszą firmą od roku 1997. Wdrożyliśmy wspólnie wiele systemów w
+              środowisku Notes/Domino
+            </p>
+            <img class="reference__logo" src="./images/reference/reference__img--wavin.png"
+              srcset="./images/reference/reference__img--wavin.webp"
+              alt="">
+          </li>
+          <li class="reference__item">
+            <h3 class="reference__firm">Sanitec Koło</h3>
+            <p class="reference__text">
+              Należy do międzynarodowej Grupy Sanitec, największego w Europie producenta ceramiki łazienkowej.
+              Tu nasz system workflow obsługuje pracę serwisu i procesy reklamacyjne.
+            </p>
+            <img class="reference__logo" src="./images/reference/reference__img--kolo.jpg"
+              srcset="./images/reference/reference__img--kolo.webp"
+              alt="">
+          </li>
+          <li class="reference__item">
+            <h3 class="reference__firm">Henkel</h3>
+            <p class="reference__text">
+              Henkel jest wiodącym światowym producentem klejów, uszczelniaczy i technologii powierzchniowych
+              do zastosowań w domu, w rzemiośle i w przemyśle. Nasze systemy CRM pracują w Polsce, Ukrainie,
+              Rosji, Rumunii i Serbii.
+            </p>
+            <img class="reference__logo" src="./images/reference/reference__img--henkel.png"
+              srcset="./images/reference/reference__img--henkel.webp"
+              alt="">
+          </li>
+          <li class="reference__item">
+            <h3 class="reference__firm">Lorenz Snackworld</h3>
+            <p class="reference__text">
+              Od ponad 75 lat Lorenz Snack-World produkuje przekąski wysokiej jakości.
+              Tu wdrozyliśmy IBM Sametime Standard, wspieramy także firmę w aplikacjach Notes/Domino.
+            </p>
+            <img class="reference__logo" src="./images/reference/reference__img--lorenz.png"
+              srcset="./images/reference/reference__img--lorenz.webp"
+              alt="">
           </li>
         </ul>
       </div>

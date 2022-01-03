@@ -6,12 +6,8 @@
   background: linear-gradient(180deg, rgba(0,104,171,1) 0%, rgba(18,76,208,0.5466561624649859) 46%, rgba(196,196,196,0.2637429971988795) 46%, rgba(255,255,255,1) 65%);
 
   @media (max-width: @tablet-width) {
-    background: linear-gradient(90deg, rgba(0,104,171,1) 0%, rgba(18,76,208,0.5466561624649859) 30%, rgba(196,196,196,0.2637429971988795) 30%, rgba(255,255,255,1) 15%);
-  }
-
-  @media (max-width: @mobile-width) {
-    padding: 20px 10px 20px 0;
-    background: linear-gradient(90deg, rgba(0,104,171,1) 0%, rgba(18,76,208,0.5466561624649859) 23%, rgba(196,196,196,0.2637429971988795) 23%, rgba(255,255,255,1) 15%);
+    padding: 20px 10px 40px 10px;
+    background: linear-gradient(180deg, rgba(0,104,171,1) 0px, rgba(18,76,208,0.5466561624649859) 83px, rgba(196,196,196,0.2637429971988795) 104px, rgba(255,255,255,1) 15%);
   }
 }
 
@@ -21,7 +17,7 @@
   justify-content: space-between;
   width: 100%;
 
-  @media (max-width: @mobile-width) {
+  @media (max-width: @tablet-width) {
     justify-content: center;
   }
 }
@@ -32,9 +28,10 @@
   font-size: 36px;
   line-height: 53px;
   color: @standart-white;
+  font-family: 'Open Sans', sans-serif;
 
-  @media (max-width: @mobile-width) {
-    color: #0068ab;
+  @media (max-width: @tablet-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -75,10 +72,6 @@
     "img img link link"
   ;
   }
-
-  // @media (max-width: @mobile-width) {
-  //   display: block;
-  // }
 }
 
 .sys-list__img {
@@ -91,12 +84,6 @@
 	transform: scale(1.2);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-
-  // @media (max-width: @tablet-width) {
-  //   grid-area: img;
-  //   border-right: none;
-  //   border: 2px solid #fff;
-  // }
 }
 
 .sys-list__image-link {
@@ -136,6 +123,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  font-family: 'Open Sans', sans-serif;
 
   @media (max-width: @tablet-width) {
     grid-area: title;
@@ -148,14 +136,11 @@
   font-size: 16px;
   line-height: 25px;
   color: #999999;
+  font-family: 'Rubik', sans-serif;
 
   @media (max-width: @tablet-width) {
     grid-area: text;
   }
-
-  // @media (max-width: @tablet-width) {
-  //   color: @standart-black;
-  // }
 }
 
 .sys-list__link {
@@ -163,8 +148,15 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+
+  font-family: 'Open Sans', sans-serif;
   text-decoration-line: underline;
-  color: #4985FF;
+  color: @standart-black;
+
+  &:hover,
+  &:focus {
+    color: @main-color;
+  }
 
   @media (max-width: @tablet-width) {
     grid-area: link;

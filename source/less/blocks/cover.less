@@ -40,25 +40,34 @@
   justify-content: center;
   align-items: center;
 
-  background: #4985FF;
+  background: @main-color;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
 
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: @standart-white;
   text-decoration: none;
-}
 
-.liquid-button {
-  font-weight: bold;
-
-  &  path {
-    cursor: pointer;
+  &:hover,
+  &:focus {
+    transition: .3s all ease-in;
+    background-color: lighten(@main-color, 10%);
+    box-shadow:  8px 8px 20px #bebebe,
+             -8px -8px 20px #ffffff;
   }
 }
+
+// .liquid-button {
+//   font-weight: bold;
+
+//   &  path {
+//     cursor: pointer;
+//   }
+// }
 
 
 
