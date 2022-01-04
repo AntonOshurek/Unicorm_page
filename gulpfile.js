@@ -103,6 +103,7 @@ const copy = (done) => {
     "source/images/**/*.svg",
     "source/images/**/*.webp",
     "!source/images/icons/*.svg",
+    "source/*.webmanifest",
   ], {
     base: "source"
   })
