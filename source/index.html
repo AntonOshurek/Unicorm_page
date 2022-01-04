@@ -5,6 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!--SEO TAGS-->
+
+  <meta name="description" content="Unicorn Poznań, systemy ibm/domino notes">
+  <meta name="keywords" content="unicorn, poznań, IBM, lotusscript, systemy Unicorn, Lotus, lotus Notes/Domino, systemy informatyczne">
+
+  <meta name="Author" content="Unicorn Poznań - Anton Ashurek">
+  <meta name="Copyright" content="Unicorn Poznań">
+  <meta name="Address" content="Rymarkiewicza 5a, 60-681 Poznań">
+
+  <!--for facebook-->
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Unicorn Poznań systemy informatyczne">
+  <meta property="og:description" content="Systemy dla środowiska IBM Notes/Domino">
+  <!-- ссылка на изображение, которое будет публиковаться в записи -->
+  <meta property="og:image" content="http://......">
+  <!-- ссылка на текущую страницу -->
+  <meta property="og:url" content="http://......">
+  <!-- название сайта -->
+  <meta property="og:site_name" content="Unicorn">
+
+  <!--for twitter-->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="Unicorn Poznań">
+  <meta name="twitter:title" content="Unicorn Poznań systemy informatyczne">
+  <meta name="twitter:description" content="Unicorn Poznań, systemy ibm/domino notes">
+  <!-- Cсылка на изображение -->
+  <meta name="twitter:image" content="http://......">
+
+  <!--favicons
+  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="./images/favicons/site.webmanifest">
+
   <!--FONTS-->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,14 +70,14 @@
     <h1 class="visually-hidden">unicorn Poznań</h1>
     <span class="header__menu-bg"></span> <!--background for open mobile nav-->
     <div class="header__wrap">
-      <div class="container container--nav">
+      <div class="container header__inners">
         <img class="header__logo" src="./images/unicorn-logo.png"
           srcset="./images/unicorn-logo.webp"
-          width="200px" height="90" alt="unicorn logo">
+          width="200" height="90" alt="unicorn Poznań sp Z.O.O ">
 
         <button class="nav-button" type="button">
           <span class="visually-hidden">Menu</span>
-          <svg class="ham hamRotate ham8" aria-hidden="true" viewBox="0 0 100 100" width="80">
+          <svg class="ham hamRotate ham8" aria-hidden="true" focusable="false" viewBox="0 0 100 100" width="80">
             <path
               class="line top"
               d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
@@ -53,24 +90,24 @@
           </svg>
         </button>
 
-        <ul class="nav"> <!-- nav--open -->
+        <ul class="nav">
           <li class="nav__item">
-            <a class="nav__link nav__link--start nav__link--current" href="#start">Start</a>
+            <a class="nav__link nav__link--cover nav__link--current" href="#cover" data-nav-name="cover">Start</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--skills" href="#skills">specjalność</a>
+            <a class="nav__link nav__link--skills" href="#skills" data-nav-name="skills">specjalność</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--aboutUs" href="#aboutUs">O nas</a>
+            <a class="nav__link nav__link--about-us" href="#about-us" data-nav-name="about-us">O nas</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--systems" href="#systems">Systemy</a>
+            <a class="nav__link nav__link--systems" href="#systems" data-nav-name="systems">Systemy</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--reference" href="#reference">Referencje</a>
+            <a class="nav__link nav__link--reference" href="#reference" data-nav-name="reference">Referencje</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--footer" href="#footer">Kontakt</a>
+            <a class="nav__link nav__link--footer" href="#footer" data-nav-name="footer">Kontakt</a>
           </li>
         </ul>
       </div>
@@ -78,50 +115,33 @@
   </header>
 
   <main class="main">
-    <section class="cover" id="start">
-      <h2 class="cover__title">Tworzymy proste rozwiązania</br> dla złożonych zadań i problemów</h2>
-      <a class="cover__link" href="#systems ">Nasze realizacje</a>
-      <!-- <a class="foo" href="#systems">
-        <span class="visually-hidden">Nasze realizacje</span>
-        <svg aria-hidden="true"
-          class="liquid-button"
-          data-text="Nasze realizacje"
-          data-force-factor="0.1"
-          data-layer-1-viscosity="0.5"
-          data-layer-2-viscosity="0.4"
-          data-layer-1-mouse-force="400"
-          data-layer-2-mouse-force="500"
-          data-layer-1-force-limit="1"
-          data-layer-2-force-limit="2"
-          data-color1="#FFF500"
-          data-color2="#20D8F9"
-          data-color3="#20D8F9">
-        </svg>
-      </a> -->
+    <section class="cover" id="cover">
+      <h2 class="cover__title">Tworzymy proste rozwiązania<br> dla złożonych zadań i problemów</h2>
+      <a class="cover__link" href="#systems">Nasze realizacje</a>
     </section>
 
     <section class="skills" id="skills">
-      <div class="container container--skills">
+      <div class="container skills__wrap">
         <h2 class="skills__title">Naszą specjalnością są systemy dla środowiska IBM Notes/Domino (w tym xPages).</h2>
         <p class="skills__subtitle">Od ponad 20 lat projektujemy, wdrażamy i serwisujemy systemy informatyczne.</p>
 
         <ul class="skills__list">
           <li class="skills__item">
-            <svg class="skills__icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
-              <use class="foo" xlink:href="images/sprite.svg#icon-ibm"></use>
+            <svg class="skills__icon" aria-hidden="true" focusable="false" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#icon-ibm"></use>
             </svg>
             <h3 class="skills__skill">IBM Systemy</h3>
             <p class="skills__text">Wdrażamy i integrujemy systemy z rodziny IBM Sametime i IBM Connections.</p>
           </li>
           <li class="skills__item">
-            <svg class="skills__icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+            <svg class="skills__icon" aria-hidden="true" focusable="false" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="images/sprite.svg#icon-license"></use>
             </svg>
             <h3 class="skills__skill">IBM Software</h3>
             <p class="skills__text">Dostarczamy licencje systemów IBM Software.</p>
           </li>
           <li class="skills__item">
-            <svg class="skills__icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+            <svg class="skills__icon" aria-hidden="true" focusable="false" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="images/sprite.svg#icon-partners"></use>
             </svg>
             <h3 class="skills__skill">Najwięksi partenry</h3>
@@ -131,9 +151,9 @@
       </div>
     </section>
 
-    <section class="about-us" id="aboutUs">
+    <section class="about-us" id="about-us">
       <h2 class="visually-hidden">O nas</h2>
-      <div class="container container--about-us">
+      <div class="container about-us__wrap">
         <article class="about-us__info">
           <h3 class="about-us__title">Kim Jesteśmy?</h3>
           <p class="about-us__text">
@@ -159,7 +179,7 @@
             na rynku. Naszymi Klientami są liderzy polskiej gospodarki.
             Mogę powiedzieć, że decydując się kilkanaście lat temu na
             specjalizację w tej dziedzinie, podjęliśmy dobrą decyzję.
-            </br>
+            <br>
             <cite class="about-us__quotes-autor">
               Grzegorz Pawlak (Lotus CLP) Prezes Zarządu (CEO)
             </cite>
@@ -196,7 +216,7 @@
     </section>
 
     <section class="systems" id="systems">
-      <div class="container container--systems">
+      <div class="container systems__wrap">
         <div class="systems__titles">
           <h2 class="systems__title">Systemy</h2>
         </div>
@@ -205,7 +225,7 @@
             <a class="sys-list__image-link" href="#">
               <img class="sys-list__img" src="./images/systems/systems__img--fenix.jpg"
                 srcset="./images/systems/systems__img--fenix.webp"
-                width="250px" height="180px" alt="fenix">
+                width="250" height="180" alt="systemy Unicorn dla Lotus Notes/Domino">
             </a>
             <h3 class="sys-list__title">Systemy Unicorn</h3>
             <p class="sys-list__text">Specjalizujemy się w projektowaniu, wdrażaniu i serwisowaniu systemów dla Lotus Notes/Domino.
@@ -217,7 +237,7 @@
             <a class="sys-list__image-link" href="#">
               <img class="sys-list__img" src="./images/systems/systems__img--ibm.jpg"
                 srcset="./images/systems/systems__img--ibm.webp"
-                width="250px" height="180px" alt="fenix">
+                width="250" height="180" alt="Systemy IBM, IBM Notes/Domino, IBM Sametime">
             </a>
             <h3 class="sys-list__title">Systemy IBM</h3>
             <p class="sys-list__text">Od wielu lat specjalizujemy się we wdrażaniu systemów IBM (dawniej Lotus).
@@ -230,7 +250,7 @@
             <a class="sys-list__image-link" href="#">
               <img class="sys-list__img" src="./images/systems/systems__img--Coastal.jpg"
                 srcset="./images/systems/systems__img--Coastal.webp"
-                width="250px" height="180px" alt="fenix">
+                width="250" height="180" alt="nawigacja morska na mapie i radar">
             </a>
             <h3 class="sys-list__title">Systemy nawigacyjne MaxSea</h3>
             <p class="sys-list__text">Od wielu lat działamy na rynku nawigacji morskiej</p>
@@ -241,7 +261,7 @@
     </section>
 
     <section class="reference" id="reference">
-      <div class="section reference--wrap">
+      <div class="container reference__wrap">
         <h2 class="reference__title">Referencje</h2>
         <ul class="reference__list">
           <li class="reference__item">
@@ -252,7 +272,7 @@
             </p>
             <img class="reference__logo" src="./images/reference/reference__img--wavin.png"
               srcset="./images/reference/reference__img--wavin.webp"
-              alt="">
+              alt="Wavin Metalplast Buk logo">
           </li>
           <li class="reference__item">
             <h3 class="reference__firm">Sanitec Koło</h3>
@@ -262,7 +282,7 @@
             </p>
             <img class="reference__logo" src="./images/reference/reference__img--kolo.jpg"
               srcset="./images/reference/reference__img--kolo.webp"
-              alt="">
+              alt="Sanitec Koło logo">
           </li>
           <li class="reference__item">
             <h3 class="reference__firm">Henkel</h3>
@@ -273,7 +293,7 @@
             </p>
             <img class="reference__logo" src="./images/reference/reference__img--henkel.png"
               srcset="./images/reference/reference__img--henkel.webp"
-              alt="">
+              alt="Henkel logo">
           </li>
           <li class="reference__item">
             <h3 class="reference__firm">Lorenz Snackworld</h3>
@@ -283,7 +303,7 @@
             </p>
             <img class="reference__logo" src="./images/reference/reference__img--lorenz.png"
               srcset="./images/reference/reference__img--lorenz.webp"
-              alt="">
+              alt="Lorenz Snackworld logo">
           </li>
         </ul>
       </div>
@@ -293,69 +313,72 @@
 
   <footer class="footer" id="footer">
     <h2 class="visually-hidden">informacja dla kontaktu</h2>
-    <div class="container">
-      <div class="footer__wrap">
-        <div class="footer__info">
-          <h3 class="footer__title">Kontakt</h3>
-          <h4 class="footer__sub-title">Unicorn Poznań Sp. z o.o.</h4>
-          <address class="footer__adress footer__text">
-            <a class="footer__adress-link footer__text"
+    <div class="container footer__wrap">
+      <div class="footer__info">
+        <h3 class="footer__title">Kontakt</h3>
+        <h4 class="footer__sub-title">Unicorn Poznań Sp. z o.o.</h4>
+        <address class="footer__adress footer__text">
+          <a class="footer__adress-link footer__text"
             target="_blank"
-              href="https://www.google.pl/maps/place/Unicorn+Pozna%C5%84+Sp.+z+o.o./@52.447289,16.9117569,19z/data=!3m1!4b1!4m5!3m4!1s0x4704434459e1d293:0x7dac66bc161c6f8c!8m2!3d52.4472896!4d16.9122952">
-              Rymarkiewicza 5a, 60-681 Poznań.
-              <svg class="footer__adress-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-                <use class="foo" xlink:href="images/sprite.svg#icon-geo"></use>
-              </svg>
-            </a>
-            <br>
-            <a class="footer__adress-link footer__text" href="tel:+480618629009">061 862 90 09 - fax</a><br>
-            <a class="footer__adress-link footer__text" href="tel:+480618629005">061 862 90 05
-              <svg class="footer__adress-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-                <use class="foo" xlink:href="images/sprite.svg#icon-tel"></use>
-              </svg>
-            </a>
-            <br>
-            <a class="footer__adress-link footer__text" href="mailto:info@unicorn.com.pl">info@unicorn.com.pl
-              <svg class="footer__adress-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-                <use class="foo" xlink:href="images/sprite.svg#icon-meil"></use>
-              </svg>
-            </a>
-          </address>
-        </div>
-        <div class="footer__info">
-          <h3 class="footer__title">Dane rejestrowe</h3>
-          <p class="footer__text">
-            Spółka wpisana do Krajowego Rejestru Sądowego
-            przez Sąd Rejonowy w Poznaniu,
-            XXI Wydział Gospodarczy Krajowego Rejestru Sądowego<br>
-            pod numerem KRS 0000109985,
-          </p>
-          <p class="footer__text footer__text--legal-info">
-            VAT UE PL-7781015619,<br>
-            Regon: 630298196,<br>
-            Kapitał zakładowy: 50 000 PLN. <br>
-          </p>
-        </div>
-        <div class="footer__info" lang="en" translate="no">
-          <h3 class="footer__title" lang="en">Register data</h3>
-          <p class="footer__text" lang="en">
-            The Company registered in the National Court Register,
-            Commercial-Register Department no. 21,
-            kept by District Court of Poznań underNo.<br>
-            KRS 0000109985,
-          </p>
-          <p class="footer__text footer__text--legal-info" lang="en">
-            VAT UE PL-7781015619,<br>
-            ID NO: 630298196,<br>
-            Initial capital: 50 000 PLN.<br>
-          </p>
-        </div>
-        <div class="footer__info footer__info--map">
-          <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d607.9396302775458!2d16.911756929272165!3d52.44728899873754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704434459e1d293%3A0x7dac66bc161c6f8c!2sUnicorn%20Pozna%C5%84%20Sp.%20z%20o.o.!5e0!3m2!1spl!2spl!4v1640950413872!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="footer__rights">
-          <p>All rights reserved 2022 </p>
-        </div>
+            rel="noreferrer"
+            href="https://www.google.pl/maps/place/Unicorn+Pozna%C5%84+Sp.+z+o.o./@52.447289,16.9117569,19z/data=!3m1!4b1!4m5!3m4!1s0x4704434459e1d293:0x7dac66bc161c6f8c!8m2!3d52.4472896!4d16.9122952">
+            Rymarkiewicza 5a, 60-681 Poznań.
+            <svg class="footer__adress-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#icon-geo"></use>
+            </svg>
+          </a>
+          <br>
+          <a class="footer__adress-link footer__text" href="tel:+480618629009">061 862 90 09 - fax</a><br>
+          <a class="footer__adress-link footer__text" href="tel:+480618629005"
+            rel="noreferrer">
+            061 862 90 05
+            <svg class="footer__adress-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#icon-tel"></use>
+            </svg>
+          </a>
+          <br>
+          <a class="footer__adress-link footer__text" href="mailto:info@unicorn.com.pl"
+            rel="noreferrer">
+            info@unicorn.com.pl
+            <svg class="footer__adress-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#icon-meil"></use>
+            </svg>
+          </a>
+        </address>
+      </div>
+      <div class="footer__info">
+        <h3 class="footer__title">Dane rejestrowe</h3>
+        <p class="footer__text">
+          Spółka wpisana do Krajowego Rejestru Sądowego
+          przez Sąd Rejonowy w Poznaniu,
+          XXI Wydział Gospodarczy Krajowego Rejestru Sądowego<br>
+          pod numerem KRS 0000109985,
+        </p>
+        <p class="footer__text footer__text--legal-info">
+          VAT UE PL-7781015619,<br>
+          Regon: 630298196,<br>
+          Kapitał zakładowy: 50 000 PLN. <br>
+        </p>
+      </div>
+      <div class="footer__info" lang="en" translate="no">
+        <h3 class="footer__title" lang="en">Register data</h3>
+        <p class="footer__text" lang="en">
+          The Company registered in the National Court Register,
+          Commercial-Register Department no. 21,
+          kept by District Court of Poznań underNo.<br>
+          KRS 0000109985,
+        </p>
+        <p class="footer__text footer__text--legal-info" lang="en">
+          VAT UE PL-7781015619,<br>
+          ID NO: 630298196,<br>
+          Initial capital: 50 000 PLN.<br>
+        </p>
+      </div>
+      <div class="footer__info footer__info--map">
+        <iframe class="footer__map" title="unicorn address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d607.9396302775458!2d16.911756929272165!3d52.44728899873754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704434459e1d293%3A0x7dac66bc161c6f8c!2sUnicorn%20Pozna%C5%84%20Sp.%20z%20o.o.!5e0!3m2!1spl!2spl!4v1640950413872!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="footer__rights">
+        <p>All rights reserved 2022 </p>
       </div>
     </div>
   </footer>
