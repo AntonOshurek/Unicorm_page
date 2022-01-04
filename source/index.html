@@ -36,11 +36,11 @@
       <div class="container container--nav">
         <img class="header__logo" src="./images/unicorn-logo.png"
           srcset="./images/unicorn-logo.webp"
-          width="200px" height="90" alt="unicorn logo">
+          width="200" height="90" alt="unicorn Poznań sp Z.O.O ">
 
         <button class="nav-button" type="button">
           <span class="visually-hidden">Menu</span>
-          <svg class="ham hamRotate ham8" aria-hidden="true" viewBox="0 0 100 100" width="80">
+          <svg class="ham hamRotate ham8" aria-hidden="true" focusable="false" viewBox="0 0 100 100" width="80">
             <path
               class="line top"
               d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
@@ -53,7 +53,7 @@
           </svg>
         </button>
 
-        <ul class="nav"> <!-- nav--open -->
+        <ul class="nav">
           <li class="nav__item">
             <a class="nav__link nav__link--cover nav__link--current" href="#cover" data-nav-name="cover">Start</a>
           </li>
@@ -79,8 +79,8 @@
 
   <main class="main">
     <section class="cover" id="cover">
-      <h2 class="cover__title">Tworzymy proste rozwiązania</br> dla złożonych zadań i problemów</h2>
-      <a class="cover__link" href="#systems ">Nasze realizacje</a>
+      <h2 class="cover__title">Tworzymy proste rozwiązania<br> dla złożonych zadań i problemów</h2>
+      <a class="cover__link" href="#systems">Nasze realizacje</a>
     </section>
 
     <section class="skills" id="skills">
@@ -90,21 +90,21 @@
 
         <ul class="skills__list">
           <li class="skills__item">
-            <svg class="skills__icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
-              <use class="foo" xlink:href="images/sprite.svg#icon-ibm"></use>
+            <svg class="skills__icon" aria-hidden="true" focusable="false" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#icon-ibm"></use>
             </svg>
             <h3 class="skills__skill">IBM Systemy</h3>
             <p class="skills__text">Wdrażamy i integrujemy systemy z rodziny IBM Sametime i IBM Connections.</p>
           </li>
           <li class="skills__item">
-            <svg class="skills__icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+            <svg class="skills__icon" aria-hidden="true" focusable="false" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="images/sprite.svg#icon-license"></use>
             </svg>
             <h3 class="skills__skill">IBM Software</h3>
             <p class="skills__text">Dostarczamy licencje systemów IBM Software.</p>
           </li>
           <li class="skills__item">
-            <svg class="skills__icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+            <svg class="skills__icon" aria-hidden="true" focusable="false" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="images/sprite.svg#icon-partners"></use>
             </svg>
             <h3 class="skills__skill">Najwięksi partenry</h3>
@@ -142,7 +142,7 @@
             na rynku. Naszymi Klientami są liderzy polskiej gospodarki.
             Mogę powiedzieć, że decydując się kilkanaście lat temu na
             specjalizację w tej dziedzinie, podjęliśmy dobrą decyzję.
-            </br>
+            <br>
             <cite class="about-us__quotes-autor">
               Grzegorz Pawlak (Lotus CLP) Prezes Zarządu (CEO)
             </cite>
@@ -188,7 +188,7 @@
             <a class="sys-list__image-link" href="#">
               <img class="sys-list__img" src="./images/systems/systems__img--fenix.jpg"
                 srcset="./images/systems/systems__img--fenix.webp"
-                width="250px" height="180px" alt="fenix">
+                width="250" height="180" alt="systemy Unicorn dla Lotus Notes/Domino">
             </a>
             <h3 class="sys-list__title">Systemy Unicorn</h3>
             <p class="sys-list__text">Specjalizujemy się w projektowaniu, wdrażaniu i serwisowaniu systemów dla Lotus Notes/Domino.
@@ -200,7 +200,7 @@
             <a class="sys-list__image-link" href="#">
               <img class="sys-list__img" src="./images/systems/systems__img--ibm.jpg"
                 srcset="./images/systems/systems__img--ibm.webp"
-                width="250px" height="180px" alt="fenix">
+                width="250" height="180" alt="Systemy IBM, IBM Notes/Domino, IBM Sametime">
             </a>
             <h3 class="sys-list__title">Systemy IBM</h3>
             <p class="sys-list__text">Od wielu lat specjalizujemy się we wdrażaniu systemów IBM (dawniej Lotus).
@@ -213,7 +213,7 @@
             <a class="sys-list__image-link" href="#">
               <img class="sys-list__img" src="./images/systems/systems__img--Coastal.jpg"
                 srcset="./images/systems/systems__img--Coastal.webp"
-                width="250px" height="180px" alt="fenix">
+                width="250" height="180" alt="Systemy nawigacyjne MaxSea dla nawigacji morskiej">
             </a>
             <h3 class="sys-list__title">Systemy nawigacyjne MaxSea</h3>
             <p class="sys-list__text">Od wielu lat działamy na rynku nawigacji morskiej</p>
@@ -224,7 +224,7 @@
     </section>
 
     <section class="reference" id="reference">
-      <div class="section reference--wrap">
+      <div class="section reference__wrap">
         <h2 class="reference__title">Referencje</h2>
         <ul class="reference__list">
           <li class="reference__item">
@@ -235,7 +235,7 @@
             </p>
             <img class="reference__logo" src="./images/reference/reference__img--wavin.png"
               srcset="./images/reference/reference__img--wavin.webp"
-              alt="">
+              alt="Wavin Metalplast Buk logo">
           </li>
           <li class="reference__item">
             <h3 class="reference__firm">Sanitec Koło</h3>
@@ -245,7 +245,7 @@
             </p>
             <img class="reference__logo" src="./images/reference/reference__img--kolo.jpg"
               srcset="./images/reference/reference__img--kolo.webp"
-              alt="">
+              alt="Sanitec Koło logo">
           </li>
           <li class="reference__item">
             <h3 class="reference__firm">Henkel</h3>
@@ -256,7 +256,7 @@
             </p>
             <img class="reference__logo" src="./images/reference/reference__img--henkel.png"
               srcset="./images/reference/reference__img--henkel.webp"
-              alt="">
+              alt="Henkel logo">
           </li>
           <li class="reference__item">
             <h3 class="reference__firm">Lorenz Snackworld</h3>
@@ -266,7 +266,7 @@
             </p>
             <img class="reference__logo" src="./images/reference/reference__img--lorenz.png"
               srcset="./images/reference/reference__img--lorenz.webp"
-              alt="">
+              alt="Lorenz Snackworld logo">
           </li>
         </ul>
       </div>
@@ -283,24 +283,24 @@
           <h4 class="footer__sub-title">Unicorn Poznań Sp. z o.o.</h4>
           <address class="footer__adress footer__text">
             <a class="footer__adress-link footer__text"
-            target="_blank"
+              target="_blank"
               href="https://www.google.pl/maps/place/Unicorn+Pozna%C5%84+Sp.+z+o.o./@52.447289,16.9117569,19z/data=!3m1!4b1!4m5!3m4!1s0x4704434459e1d293:0x7dac66bc161c6f8c!8m2!3d52.4472896!4d16.9122952">
               Rymarkiewicza 5a, 60-681 Poznań.
-              <svg class="footer__adress-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-                <use class="foo" xlink:href="images/sprite.svg#icon-geo"></use>
+              <svg class="footer__adress-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/sprite.svg#icon-geo"></use>
               </svg>
             </a>
             <br>
             <a class="footer__adress-link footer__text" href="tel:+480618629009">061 862 90 09 - fax</a><br>
             <a class="footer__adress-link footer__text" href="tel:+480618629005">061 862 90 05
-              <svg class="footer__adress-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-                <use class="foo" xlink:href="images/sprite.svg#icon-tel"></use>
+              <svg class="footer__adress-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/sprite.svg#icon-tel"></use>
               </svg>
             </a>
             <br>
             <a class="footer__adress-link footer__text" href="mailto:info@unicorn.com.pl">info@unicorn.com.pl
-              <svg class="footer__adress-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-                <use class="foo" xlink:href="images/sprite.svg#icon-meil"></use>
+              <svg class="footer__adress-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/sprite.svg#icon-meil"></use>
               </svg>
             </a>
           </address>
