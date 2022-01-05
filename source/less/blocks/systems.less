@@ -1,15 +1,15 @@
 .systems {
   width: 100%;
-  padding: 100px @standart-side-padding 100px @standart-side-padding;
+  padding: @standart-top-bottom-padding @standart-side-padding;
 
-  background-image: url('../../images/systems/systems__background.jpg');
+  background-image: url('../images/systems/systems__background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
   @media (max-width: @tablet-width) {
-    padding: 80px 10px 80px 10px;
+    padding: @standart-top-bottom-mobile-padding @standart-side-mobile-padding;
   }
 }
 
