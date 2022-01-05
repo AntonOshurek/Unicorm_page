@@ -41,7 +41,7 @@
   }
 }
 
-.services__srvice-title {
+.services__service-title {
   color: @standart-white;
   font-size: 28px;
 }
@@ -54,11 +54,9 @@
 .services__img-wrap {
   position: absolute;
   height: 100%;
-  // width: 320px;
   width: 1px;
   overflow: hidden;
   opacity: 0;
-
   filter: (grayscale(.4));
 
   &--right {
@@ -69,11 +67,11 @@
   &--left {
     transform: rotate(180deg);
     top: 0;
-    left: 0;
+    left: -20px;
   }
 
   &--active {
-    width: 320px;
+    width: 300px;
     opacity: 1;
     transition: opacity 0s, width 2s,;
   }
@@ -85,6 +83,9 @@
 }
 
 .services__image {
-  width: 320px;
+  width: 300px;
   height: 100%;
+  object-fit: contain;
 }
+
+
