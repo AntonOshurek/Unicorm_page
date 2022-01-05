@@ -160,6 +160,47 @@ const setCurrentMenuItem = () => {
 
 
 
+/***/ }),
+
+/***/ "./source/scripts/blocks/show-services.js":
+/*!************************************************!*\
+  !*** ./source/scripts/blocks/show-services.js ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "showServices": function() { return /* binding */ showServices; }
+/* harmony export */ });
+const showServices = () => {
+  let imageItems = [...document.querySelectorAll('.services__img-wrap')];
+  let titles = [...document.querySelectorAll('.services__text')];
+  let options = {
+    rootMargin: '0px',
+    threshold: .2
+  };
+
+  let setItemActive = entries => {
+    console.log(entries);
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('services__img-wrap--active');
+      }
+    });
+  };
+
+  let observer = new IntersectionObserver(setItemActive, options);
+  imageItems.forEach((item, idx) => {
+    //  idx % 2 == 1? item.style.left = '5%' : item.style.left = '5%';
+    observer.observe(item);
+  }); // titles.forEach((title, idx) => {
+  //   // idx % 2 == 0? title.style.left = '45%' : title.style.left = '35%';
+  //   observer.observe(title);
+  // })
+};
+
+
+
 /***/ })
 
 /******/ 	});
@@ -228,6 +269,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_nav_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blocks/nav-scroll */ "./source/scripts/blocks/nav-scroll.js");
 /* harmony import */ var _blocks_set_current_menu_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/set-current-menu-item */ "./source/scripts/blocks/set-current-menu-item.js");
 /* harmony import */ var _blocks_mobile_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/mobile-menu */ "./source/scripts/blocks/mobile-menu.js");
+/* harmony import */ var _blocks_show_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/show-services */ "./source/scripts/blocks/show-services.js");
+
 
 
 
@@ -235,6 +278,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_blocks_nav_scroll__WEBPACK_IMPORTED_MODULE_0__.navScroll)();
   (0,_blocks_set_current_menu_item__WEBPACK_IMPORTED_MODULE_1__.setCurrentMenuItem)();
   (0,_blocks_mobile_menu__WEBPACK_IMPORTED_MODULE_2__.mobileMenu)();
+  (0,_blocks_show_services__WEBPACK_IMPORTED_MODULE_3__.showServices)();
 });
 }();
 /******/ })()
