@@ -19,11 +19,6 @@
   <meta property="og:type" content="article">
   <meta property="og:title" content="Unicorn Poznań systemy informatyczne">
   <meta property="og:description" content="Systemy dla środowiska IBM Notes/Domino">
-  <!-- ссылка на изображение, которое будет публиковаться в записи -->
-  <meta property="og:image" content="http://www.unicorn.com.pl/index_htm_files/734.jpg">
-  <!-- ссылка на текущую страницу -->
-  <meta property="og:url" content="https://antonoshurek.github.io/Unicorn_page/">
-  <!-- название сайта -->
   <meta property="og:site_name" content="Unicorn">
 
   <!--for twitter-->
@@ -31,8 +26,6 @@
   <meta name="twitter:site" content="Unicorn Poznań">
   <meta name="twitter:title" content="Unicorn Poznań systemy informatyczne">
   <meta name="twitter:description" content="Unicorn Poznań, systemy ibm/domino notes">
-  <!-- Cсылка на изображение -->
-  <meta name="twitter:image" content="http://www.unicorn.com.pl/index_htm_files/734.jpg">
 
   <!--favicons
   -->
@@ -61,13 +54,12 @@
   <title>UNICORN</title>
 
   <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 
 <body class="body">
 
   <header class="header">
-    <h1 class="visually-hidden">unicorn Poznań</h1>
+    <h1 class="visually-hidden">unicorn Poznań - systemy informatyczne</h1>
     <span class="header__menu-bg"></span> <!--background for open mobile nav-->
     <div class="header__wrap">
       <div class="container header__inners">
@@ -102,6 +94,9 @@
           </li>
           <li class="nav__item">
             <a class="nav__link nav__link--systems" href="#systems" data-nav-name="systems">Systemy</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--systems" href="#services" data-nav-name="services">Usługi</a>
           </li>
           <li class="nav__item">
             <a class="nav__link nav__link--reference" href="#reference" data-nav-name="reference">Referencje</a>
@@ -187,19 +182,11 @@
         </article>
         <article class="about-us__mission">
           <h3 class="about-us__title">Nasza misja</h3>
-          <ul class="mission-list">
-            <li class="mission-list__item">
-              Projektujemy systemy dostosowane do potrzeb naszych Klientów
-            </li>
-            <li class="mission-list__item">
-              Wdrażamy systemy własne i inne
-            </li>
-            <li class="mission-list__item">
-              Administrujemy systemami naszych klientów
-            </li>
-            <li class="mission-list__item">
-              Prowadzimy outsourcing rozwiązań biznesowych
-            </li>
+          <ul class="about-us__list about-us__list--mission">
+            <li class="about-us__text">Projektujemy systemy dostosowane do potrzeb naszych Klientów</li>
+            <li class="about-us__text">Wdrażamy systemy własne i inne</li>
+            <li class="about-us__text">Administrujemy systemami naszych klientów</li>
+            <li class="about-us__text">Prowadzimy outsourcing rozwiązań biznesowych</li>
           </ul>
         </article>
         <article class="about-us__politic">
@@ -208,9 +195,17 @@
             Jakość w działalności gospodarczej rozumiemy jako osiągnięcie takiego stopnia organizacji firmy,
             która będzie w stanie świadczyć usługi na poziomie zapewniającym satysfakcję naszym Klientom.
             Głównym celem firmy jest wzrost sprzedaży oprogramowania dedykowanego oraz ciągła poprawa
-            w zakresie obsługi handlowej i serwisowej naszych Klientów. Nasze cele określone w polityce
-            jakości będziemy realizować poprzez:
+            w zakresie obsługi handlowej i serwisowej naszych Klientów.
           </p>
+          <p class="about-us__text">Nasze cele określone w polityce jakości będziemy realizować poprzez:</p>
+          <ul class="about-us__list about-us__list--quality">
+            <li class="about-us__text">Kompleksową obsługę Klientów,</li>
+            <li class="about-us__text">Realizowanie zleceń zgodnie z wymaganiami Klientów i w określonym terminie,</li>
+            <li class="about-us__text">Szkolenie pracowników w zakresie wiedzy technicznej i poprawy obsługi klientów,</li>
+            <li class="about-us__text">Stosowanie odpowiednich narzędzi informatycznych,</li>
+            <li class="about-us__text">Promowanie i wdrażanie innowacyjnych rozwiązań,</li>
+            <li class="about-us__text">Ciągłe doskonalenie systemu zarządzania jakością.</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -260,10 +255,9 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="container services__wrap">
         <h2 class="services__title">Usługi</h2>
-
         <div class="services__item">
           <div class="services__text">
             <h3 class="services__service-title">Usługi serwisowe</h3>
@@ -280,7 +274,6 @@
               width="300" height="160" alt="service">
           </div>
         </div>
-
         <div class="services__item">
           <div class="services__text">
             <h3 class="services__service-title">Projektowanie i wdrażanie systemów</h3>
@@ -294,12 +287,14 @@
             </p>
           </div>
           <div class="services__img-wrap services__img-wrap--left">
-            <img class="services__image services__image--top" src="./images/services/services__foo-3.png"
+            <picture>
+              <source media="(max-width:600px)" srcset="./images/services/services__foo-5.webp">
+              <img class="services__image services__image--top" src="./images/services/services__foo-3.png"
               srcset="./images/services/services__foo-3.webp"
               width="300" height="160" alt="service">
+            </picture>
           </div>
         </div>
-
         <div class="services__item">
           <div class="services__text">
             <h3 class="services__service-title">Integracja systemów</h3>
@@ -310,12 +305,11 @@
             </p>
           </div>
           <div class="services__img-wrap services__img-wrap--right">
-            <img class="services__image" src="./images/services/services__foo-4.png"
-              srcset="./images/services/services__foo-4.webp"
+            <img class="services__image" src="./images/services/services__foo-6.png"
+              srcset="./images/services/services__foo-6.webp"
               width="300" height="160" alt="service">
           </div>
         </div>
-
         <div class="services__item">
           <div class="services__text">
             <h3 class="services__service-title">Inne usługi</h3>
@@ -334,7 +328,6 @@
               width="300" height="160" alt="service">
           </div>
         </div>
-
       </div>
     </section>
 
@@ -397,16 +390,15 @@
         <h4 class="footer__sub-title">Unicorn Poznań Sp. z o.o.</h4>
         <address class="footer__adress footer__text">
           <a class="footer__adress-link footer__text"
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.google.pl/maps/place/Unicorn+Pozna%C5%84+Sp.+z+o.o./@52.447289,16.9117569,19z/data=!3m1!4b1!4m5!3m4!1s0x4704434459e1d293:0x7dac66bc161c6f8c!8m2!3d52.4472896!4d16.9122952">
-          Rymarkiewicza 5a, 60-681 Poznań.
-          <svg class="footer__adress-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="images/sprite.svg#icon-geo"></use>
-          </svg>
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.google.pl/maps/place/Unicorn+Pozna%C5%84+Sp.+z+o.o./@52.447289,16.9117569,19z/data=!3m1!4b1!4m5!3m4!1s0x4704434459e1d293:0x7dac66bc161c6f8c!8m2!3d52.4472896!4d16.9122952">
+            Rymarkiewicza 5a, 60-681 Poznań.
+            <svg class="footer__adress-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#icon-geo"></use>
+            </svg>
           </a>
-          <br>
-          <a class="footer__adress-link footer__text" href="tel:+480618629009">061 862 90 09 - fax</a><br>
+          <a class="footer__adress-link footer__text" href="tel:+480618629009">061 862 90 09 - fax</a>
           <a class="footer__adress-link footer__text" href="tel:+480618629005"
             rel="noreferrer">
             061 862 90 05
@@ -414,7 +406,6 @@
               <use xlink:href="images/sprite.svg#icon-tel"></use>
             </svg>
           </a>
-          <br>
           <a class="footer__adress-link footer__text" href="mailto:info@unicorn.com.pl"
             rel="noreferrer">
             info@unicorn.com.pl

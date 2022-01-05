@@ -134,14 +134,19 @@
   margin-top: 10px;
 }
 
-.mission-list {
-  padding-left: 20px;
+.about-us__list {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
-  grid-row-gap: 10px;
-}
 
-.mission-list__item {
-  font-family: 'Rubik', sans-serif;
+  &--mission {
+    padding-left: 20px;
+    grid-row-gap: 10px;
+  }
+
+  &--quality {
+    margin-left: 20px;
+    margin-top: 8px;
+    grid-row-gap: 7px;
+  }
 }

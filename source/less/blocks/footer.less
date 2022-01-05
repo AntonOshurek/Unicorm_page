@@ -77,6 +77,12 @@
   }
 }
 
+.footer__adress {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2px;
+}
+
 .footer__adress-icon {
   height: 15px;
   width: 15px;
@@ -84,13 +90,23 @@
 }
 
 .footer__adress-link {
+  color: @standart-black;
   text-decoration: underline;
   cursor: pointer;
   padding: 8px 4px;
 
+  & > .footer__adress-icon {
+    fill: #999;
+  }
+
   &:hover,
   &:focus {
-    color: @standart-black;
+    color: @main-color;
+  }
+
+  &:hover > .footer__adress-icon,
+  &:focus > .footer__adress-icon {
+    fill: @main-color;
   }
 }
 

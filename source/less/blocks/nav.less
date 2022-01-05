@@ -3,9 +3,9 @@
   height: 100%;
 
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(7, auto);
   justify-content: end;
-  grid-column-gap: 40px;
+  grid-column-gap: 30px;
 
   background-color: transparent;
 
@@ -69,8 +69,7 @@
   &:hover,
   &:focus,
   &--current {
-
-    // pointer-events: none;
+    color: @main-color;
 
     &::after {
       content: '';
@@ -79,13 +78,11 @@
       left: 50%;
       transform: translateX(-50%);
       width: 107px;
-      height: 2px;
-      background-color: currentColor;
+      height: 3px;
+      background-color: @main-color;
     }
   }
 }
-
-
 
 // mobile menu button icon
 .nav-button {
