@@ -1,6 +1,7 @@
 const mobileMenu = () => {
 
   const navButton = document.querySelector('.nav-button');
+	const navButtonndicator = document.querySelector('.nav-button__indicator');
   const navBlock = document.querySelector('.nav');
   const navButtonSvg = document.querySelector('.ham');
   const body = document.querySelector('.body');
@@ -11,6 +12,7 @@ const mobileMenu = () => {
 
   const closeMenu = () => {
     menuOpen = false;
+		navButtonndicator.textContent = 'open menu button';
     navBlock.classList.remove('nav--open');
     navButtonSvg.classList.remove('active');
     menuBackground.classList.remove('header__menu-bg--open');
@@ -29,6 +31,7 @@ const mobileMenu = () => {
 
   const openMenu = () => {
     menuOpen = true;
+		navButtonndicator.textContent = 'close menu button';
     navBlock.classList.add('nav--open');
     navButtonSvg.classList.add('active');
     menuBackground.classList.add('header__menu-bg--open');
