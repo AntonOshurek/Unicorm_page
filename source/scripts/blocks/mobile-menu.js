@@ -49,7 +49,6 @@ const mobileMenu = () => {
   }
 
   navButton.addEventListener('click', onMobileMenuToogle);
-
 }
 
 export {mobileMenu};
