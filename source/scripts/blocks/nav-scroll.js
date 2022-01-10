@@ -28,6 +28,7 @@ const navScroll = () => {
 			navButton = false;
 		}
 	}
+	onHeightCheck();
 
   window.addEventListener('scroll', onScrollCheck);
   window.addEventListener('resize', onHeightCheck);
