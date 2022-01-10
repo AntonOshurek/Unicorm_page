@@ -6,7 +6,10 @@
 }
 
 .sys-cover__wrap {
-	padding: @standart-top-bottom-padding @standart-side-padding;
+	padding: 120px @standart-side-padding @standart-top-bottom-padding @standart-side-padding;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 40px;
 }
 
 .sys-cover__title {
@@ -22,5 +25,21 @@
     font-weight: 600;
     font-size: 38px;
     line-height: 44px;
+  }
+}
+
+.sys-cover__sub-title {
+	font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+
+  color: @standart-black;
+
+  @media (max-width: @mobile-width) {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
   }
 }
