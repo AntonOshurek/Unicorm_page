@@ -106,6 +106,7 @@ const navScroll = () => {
     }
   };
 
+  onHeightCheck();
   window.addEventListener('scroll', onScrollCheck);
   window.addEventListener('resize', onHeightCheck);
 };
