@@ -28,7 +28,8 @@
   border-bottom: 1px solid @sub-text-color;
   transition: 0.5s all ease-in;
 
-  &--scroll {
+  &--scroll,
+	&--sys {
     background-color: rgba(255, 255, 255, 0.95);
     transition: 0.5s all ease-in;
     color: @standart-black;
@@ -43,4 +44,19 @@
 
 .header__logo {
   z-index: 2;
+}
+
+.header__back-btn { //in sys page
+	width: min-content;
+	background-color: transparent;
+	border: none;
+	justify-self: end;
+	width: 45px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.header__back-icon {
+	transform: rotate(180deg);
+
 }

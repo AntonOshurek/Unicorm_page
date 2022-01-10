@@ -1,0 +1,26 @@
+.sys-cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: @standart-white;
+}
+
+.sys-cover__wrap {
+	padding: @standart-top-bottom-padding @standart-side-padding;
+}
+
+.sys-cover__title {
+	font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+
+  color: @standart-black;
+
+  @media (max-width: @mobile-width) {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
