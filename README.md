@@ -27,7 +27,7 @@
 ### how instal it?
 
 * **instal node.js**
-* **npm clone ~~repository name~~**
+* **git clone ~~repository name~~**
 * **npm i**
 * **npm run build**
 * **npm start**
