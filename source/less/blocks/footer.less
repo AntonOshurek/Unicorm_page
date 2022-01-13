@@ -19,7 +19,14 @@
 }
 
 .footer__info {
-  max-width: 260px;
+  width: 260px;
+	position: relative;
+
+	@media (max-width: @mobile-width) {
+		&--adress {
+			width: 100%;
+		}
+	}
 
   &--map {
     flex-grow: 1;
@@ -33,7 +40,20 @@
   }
 }
 
+.footer__no-js-map {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	z-index: 1;
+}
+
 .footer__map {
+	display: flex;
   width: 100%;
   height: 250px;
 }
@@ -80,7 +100,6 @@
 .footer__adress {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 2px;
 }
 
 .footer__adress-icon {
@@ -92,12 +111,17 @@
   color: @standart-black;
   text-decoration: underline;
   cursor: pointer;
-  padding: 8px 4px;
+  padding: 8px 0;
+	white-space: nowrap;
 
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 6px;
+
+	@media (max-width: @tablet-width) {
+		justify-content: center;
+	}
 
   & > .footer__adress-icon {
     fill: @sub-text-color;
