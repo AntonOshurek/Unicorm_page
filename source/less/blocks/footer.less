@@ -19,7 +19,13 @@
 }
 
 .footer__info {
-  max-width: 260px;
+  width: 260px;
+
+	@media (max-width: @mobile-width) {
+		&--adress {
+			width: 100%;
+		}
+	}
 
   &--map {
     flex-grow: 1;
@@ -34,6 +40,7 @@
 }
 
 .footer__map {
+	display: flex;
   width: 100%;
   height: 250px;
 }
@@ -80,7 +87,6 @@
 .footer__adress {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 2px;
 }
 
 .footer__adress-icon {
@@ -92,12 +98,17 @@
   color: @standart-black;
   text-decoration: underline;
   cursor: pointer;
-  padding: 8px 4px;
+  padding: 8px 0;
+	white-space: nowrap;
 
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 6px;
+
+	@media (max-width: @tablet-width) {
+		justify-content: center;
+	}
 
   & > .footer__adress-icon {
     fill: @sub-text-color;
