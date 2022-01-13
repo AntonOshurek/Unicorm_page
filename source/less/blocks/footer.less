@@ -19,7 +19,7 @@
 }
 
 .footer__info {
-  max-width: 255px;
+  max-width: 260px;
 
   &--map {
     flex-grow: 1;
@@ -84,9 +84,8 @@
 }
 
 .footer__adress-icon {
-  height: 15px;
-  width: 15px;
-  margin-left: 4px;
+  height: 20px;
+  width: 20px;
 }
 
 .footer__adress-link {
@@ -95,8 +94,13 @@
   cursor: pointer;
   padding: 8px 4px;
 
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 6px;
+
   & > .footer__adress-icon {
-    fill: #999;
+    fill: @sub-text-color;
   }
 
   &:hover,
