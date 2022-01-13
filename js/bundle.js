@@ -2,6 +2,30 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./source/scripts/blocks/footer-map-link.js":
+/*!**************************************************!*\
+  !*** ./source/scripts/blocks/footer-map-link.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "footerMapLink": function() { return /* binding */ footerMapLink; }
+/* harmony export */ });
+const footerMapLink = () => {
+  //if browser on javaScript
+  const noJsMap = document.querySelector('.footer__no-js-map');
+  const imageItems = document.querySelectorAll('.services__img-wrap');
+  noJsMap.remove();
+  imageItems.forEach(item => {
+    item.classList.remove('services__img-wrap--active');
+  });
+};
+
+
+
+/***/ }),
+
 /***/ "./source/scripts/blocks/mobile-menu.js":
 /*!**********************************************!*\
   !*** ./source/scripts/blocks/mobile-menu.js ***!
@@ -156,6 +180,7 @@ const setCurrentMenuItem = () => {
     });
   };
 
+  markCurrentMenuItem();
   window.addEventListener('scroll', markCurrentMenuItem);
 };
 
@@ -265,6 +290,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_set_current_menu_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/set-current-menu-item */ "./source/scripts/blocks/set-current-menu-item.js");
 /* harmony import */ var _blocks_mobile_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/mobile-menu */ "./source/scripts/blocks/mobile-menu.js");
 /* harmony import */ var _blocks_show_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/show-services */ "./source/scripts/blocks/show-services.js");
+/* harmony import */ var _blocks_footer_map_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/footer-map-link */ "./source/scripts/blocks/footer-map-link.js");
+
 
 
 
@@ -274,6 +301,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_blocks_set_current_menu_item__WEBPACK_IMPORTED_MODULE_1__.setCurrentMenuItem)();
   (0,_blocks_mobile_menu__WEBPACK_IMPORTED_MODULE_2__.mobileMenu)();
   (0,_blocks_show_services__WEBPACK_IMPORTED_MODULE_3__.showServices)();
+  (0,_blocks_footer_map_link__WEBPACK_IMPORTED_MODULE_4__.footerMapLink)();
 });
 }();
 /******/ })()
