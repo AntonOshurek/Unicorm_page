@@ -32,6 +32,8 @@ const setCurrentMenuItem = () => {
     })
   };
 
+	markCurrentMenuItem();
+
   window.addEventListener('scroll', markCurrentMenuItem);
 }
 
