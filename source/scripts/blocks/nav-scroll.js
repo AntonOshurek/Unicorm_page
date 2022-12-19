@@ -6,6 +6,7 @@ const navScroll = () => {
   const navButtonSvg = document.querySelector('.ham');
   let navButton = false;
 
+	//change header color after start a scrolling page
   const onScrollCheck = () => {
 		if (window.scrollY > SCROLL_OFFSET) {
       header.classList.add('header__wrap--scroll');
@@ -30,7 +31,7 @@ const navScroll = () => {
 	}
 	onHeightCheck();
 
-  window.addEventListener('scroll', onScrollCheck);
+  // window.addEventListener('scroll', onScrollCheck);
   window.addEventListener('resize', onHeightCheck);
 }
 
