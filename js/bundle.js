@@ -103,7 +103,7 @@ const SCROLL_OFFSET = 40;
 const navScroll = () => {
   const header = document.querySelector('.header__wrap');
   const navButtonSvg = document.querySelector('.ham');
-  let navButton = false;
+  let navButton = false; //change header color after start a scrolling page
 
   const onScrollCheck = () => {
     if (window.scrollY > SCROLL_OFFSET) {
@@ -130,8 +130,8 @@ const navScroll = () => {
     }
   };
 
-  onHeightCheck();
-  window.addEventListener('scroll', onScrollCheck);
+  onHeightCheck(); // window.addEventListener('scroll', onScrollCheck);
+
   window.addEventListener('resize', onHeightCheck);
 };
 
