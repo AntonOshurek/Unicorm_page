@@ -1,20 +1,20 @@
-const gulp = require('gulp'),
-      plumber = require('gulp-plumber'),
-      sourcemap = require('gulp-sourcemaps'),
-      less = require('gulp-less'),
-      postcss = require('gulp-postcss'),
-      autoprefixer = require('autoprefixer'),
-      sync = require('browser-sync').create(),
-      htmlmin = require('gulp-htmlmin'),
-      csso = require('postcss-csso'),
-      rename = require('gulp-rename'),
-      squoosh = require('gulp-libsquoosh'),
-      webp = require("gulp-webp"),
-      del = require('del'),
-      webpack = require("webpack-stream");
+import gulp from 'gulp'
+import plumber from 'gulp-plumber'
+import sourcemap from 'gulp-sourcemaps'
+import less from 'gulp-less'
+import postcss from 'gulp-postcss'
+import autoprefixer from 'autoprefixer'
+import sync from 'browser-sync'
+import htmlmin from 'gulp-htmlmin'
+import csso from 'postcss-csso'
+import rename from 'gulp-rename'
+import squoosh from 'gulp-libsquoosh'
+import webp from "gulp-webp"
+import {deleteSync} from 'del';
+import webpack from "webpack-stream"
 
 // Styles
-const styles = () => {
+export const styles = () => {
   return gulp.src('source/less/style.less')
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -26,20 +26,18 @@ const styles = () => {
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
+    .pipe(sync.create().stream());
 }
-exports.styles = styles;
 
 //HTML
-const html = () => {
+export const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
 };
-exports.html = html;
 
 //js webpack
-const script = () => {
+export const script = () => {
   return gulp.src('source/scripts/index.js')
   .pipe(webpack({
     mode: 'development',
@@ -57,6 +55,7 @@ const script = () => {
           loader: 'babel-loader',
           options: {
             presets: [['@babel/preset-env', {
+							targets: "> 0.25%, not dead",
               debug: true,
               corejs: 3,
               useBuiltIns: "usage"
@@ -70,33 +69,29 @@ const script = () => {
   .pipe(gulp.dest('build/js'))
   .pipe(sync.stream());
 }
-exports.script = script;
 
 //squoosh
-const optimizeImages = () => {
+export const optimizeImages = () => {
   return gulp.src('source/images/**/*.{png,jpg,svg}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/images'))
 }
-exports.optimizeImages = optimizeImages;
 
 //copyimg
-const copyImages = () => {
+export const copyImages = () => {
   return gulp.src('source/images/**/*.{png,jpg,svg}')
   .pipe(gulp.dest('build/images'))
 }
-exports.copyImages = copyImages;
 
 // WebP
-const createWebp = () => {
+export const createWebp = () => {
   return gulp.src("source/images/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/images"))
 }
-exports.createWebp = createWebp;
 
 // Copy
-const copy = (done) => {
+export const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
@@ -110,16 +105,15 @@ const copy = (done) => {
     .pipe(gulp.dest("build"))
   done();
 }
-exports.copy = copy;
 
 //Clean
-const clean = () => {
-  return del("build");
+export const clean = async () => {
+  return await deleteSync(['build']);
+	// const deletedFilePaths =  deleteSync(['build']);
 };
-exports.clean = clean;
 
 // Server
-const server = (done) => {
+export const server = (done) => {
   sync.init({
     server: {
       baseDir: 'build'
@@ -130,7 +124,6 @@ const server = (done) => {
   });
   done();
 }
-exports.server = server;
 
 //RELOAD
 const reload = (done) => {
@@ -145,7 +138,7 @@ const watcher = () => {
 }
 
 // Build
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
@@ -156,10 +149,9 @@ const build = gulp.series(
     script,
   ),
 );
-exports.build = build;
 
 // Default
-exports.default = gulp.series(
+export default gulp.series(
   clean,
   copy,
   copyImages,
