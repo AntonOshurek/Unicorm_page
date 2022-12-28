@@ -24,7 +24,7 @@ const navScroll = () => {
 	const onHeightCheck = () => {
 		if(window.getComputedStyle(header).width.replace(/\D+/, '') < TABLET_WIDTH) {
 			navButton = true;
-			onScrollCheck();
+			// onScrollCheck();
 		} else {
 			navButton = false;
 		}

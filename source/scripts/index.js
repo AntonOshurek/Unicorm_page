@@ -6,7 +6,7 @@ import {footerMapLink} from './blocks/footer-map-link.js';
 
 
 window.addEventListener('DOMContentLoaded', () => {
-  navScroll();
+  // navScroll();
   setCurrentMenuItem();
   mobileMenu();
   showServices();

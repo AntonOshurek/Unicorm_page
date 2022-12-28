@@ -56,7 +56,7 @@
   align-items: center;
 
   font-family: 'Rubik', sans-serif;
-  color: currentColor;
+  color: @standart-black;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -108,16 +108,14 @@
   -ms-user-select: none;
   user-select: none;
 
-  &--black > .line {
-    stroke: @standart-black;
-  }
+	stroke: @standart-black;
 }
 .line {
   fill:none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke:#fff;
   stroke-width:5.5;
   stroke-linecap:round;
+	stroke: @standart-black;
 }
 .hamRotate.active {
   transform: rotate(45deg);
